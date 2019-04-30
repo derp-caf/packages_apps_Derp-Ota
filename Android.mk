@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2008 The Android Open Source Project
-# Copyright (C) 20019 The Derp-CAF Open Source Project
+# Copyright (C) 2019 The Derp-CAF Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,4 +21,5 @@ include $(CLEAR_VARS)
 LOCAL_SRC_FILES := $(call all-subdir-java-files)
 LOCAL_PACKAGE_NAME := Derp-Ota
 LOCAL_CERTIFICATE := platform
+LOCAL_SDK_VERSION := current
 include $(BUILD_PACKAGE)
