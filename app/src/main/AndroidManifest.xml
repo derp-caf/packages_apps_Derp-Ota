@@ -11,7 +11,7 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/derp_logo"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@android:style/Theme.DeviceDefault.Settings">
         <activity android:name=".nonetcon"></activity>
         <activity android:name=".splash">
             <intent-filter>
