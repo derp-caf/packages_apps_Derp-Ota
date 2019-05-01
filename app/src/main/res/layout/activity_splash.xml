@@ -11,7 +11,7 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="262dp"
-        app:srcCompat="@drawable/logo"
+        android:src = "@drawable/logo"
         tools:layout_editor_absoluteX="108dp"
         tools:layout_editor_absoluteY="280dp" />
 

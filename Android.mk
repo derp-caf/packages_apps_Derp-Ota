@@ -18,8 +18,16 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
-LOCAL_SRC_FILES := $(call all-subdir-java-files)
+LOCAL_SRC_FILES := $(call all-java-files-under, app)
 LOCAL_PACKAGE_NAME := Derp-Ota
 LOCAL_CERTIFICATE := platform
+LOCAL_USE_AAPT2 := true
 LOCAL_SDK_VERSION := current
+LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/app/src/main/res
+LOCAL_FULL_MANIFEST_FILE := $(LOCAL_PATH)/app/src/main/AndroidManifest.xml
+LOCAL_STATIC_ANDROID_LIBRARIES := \
+        android-support-v4 \
+        android-support-v7-appcompat \
+        android-support-v13
 include $(BUILD_PACKAGE)
+include $(call all-makefiles-under,$(LOCAL_PATH))
