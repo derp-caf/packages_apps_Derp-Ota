@@ -112,7 +112,7 @@ public class ota extends AsyncTask<Void,Void,Void>
     @Override
     protected Void doInBackground(Void... voids) {
         try {
-            URL url=new URL("https://raw.githubusercontent.com/MRTHAKER/OtaConfig/master/"+Build.DEVICE+".xml");
+            URL url=new URL("https://raw.githubusercontent.com/derp-caf/OtaConfig/master/"+Build.DEVICE+".xml");
             XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
             factory.setNamespaceAware(false);
             XmlPullParser xpp = factory.newPullParser();
